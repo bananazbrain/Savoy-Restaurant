@@ -1,0 +1,30 @@
+@import _vars
+.input
+	&__title
+		display: block
+		color: #c9a131
+		font-weight: 700
+		margin-bottom: 9px
+	&__field
+		display: block
+		width: 100%
+		color: #7c7c7c
+		font-family: $ffMain
+		font-size: $fzMain
+		height: 36px
+		padding-left: 13px
+		padding-right: 13px
+		transition: .3s
+		text-transform: capitalize
+		&::placeholder
+			opacity: 1
+			font-style: italic
+			color: #7c7c7c
+		&:first-letter
+			
+	&.--border
+		.input
+			&__field
+				border: 1px solid #c8c6c6
+				&:focus
+					border-color: #c89f2d

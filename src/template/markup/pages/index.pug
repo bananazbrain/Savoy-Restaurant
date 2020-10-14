@@ -1,0 +1,132 @@
+extends ../_template
+block vars
+	- var title = "Главная" + title
+block content
+	.intro.bg-img(style="background-image: url(upload/bg/bg-intro.png)")
+		.case
+			.intro__title the right ingredients for the right food
+			.intro__buttons.row
+				.intro__btn.btn.--black BOOK A TABLE
+				.intro__btn.btn.--white SEE THE MENU
+	.about#about
+		.case.row
+			.about__info.info
+				.info__title.h2 Just the right food
+				.info__desc.desc If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
+				.info__chef
+					img(src="upload/about-chef.png", alt="")
+			.about__img
+				img(src="upload/about-dish.png", alt="")
+	.ingredients.bg-img(style="background-image: url(upload/bg/bg-ingredients.png)")#ingredients
+		.case
+			.ingredients__wrap
+				.ingredients__title.h2 Fine ingredients
+				.ingredients__desc.desc If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
+				.ingredients__img.row
+					.ingredients__item
+						img(src="../upload/ingr-1.png", alt="")
+					.ingredients__item
+						img(src="../upload/ingr-2.png", alt="")
+					.ingredients__item
+						img(src="../upload/ingr-3.png", alt="")
+	.menu#menu
+		.case
+			.menu__wrap
+				.menu__item
+					.menu__title.h2 Appetisers
+					.menu__list.dish
+						.dish__head.row
+							.dish__title Soufflé au Fromage
+							.dish__price $3.99
+						.dish__body Airy and simple, this legendary French comfort food consists of a cheese base combined with whisked egg whites, butter, milk, and flour.
+					.menu__list.dish
+						.dish__head.row
+							.dish__title Gravlax
+							.dish__price $5.50
+						.dish__body Gravlax is a Scandinavian dish consisting of raw, salt-cured salmon that is traditionally seasoned with dill.  It pairs well with crackers and pickled vegetables.
+					.menu__list.dish
+						.dish__head.row
+							.dish__title Crudités
+							.dish__price $5.25
+						.dish__body Simple and elegant, crudités are traditional French appetizers consisting of raw vegetables which can be sliced or left intact.
+				.menu__item 
+					.menu__title.h2 Starters
+					.menu__list.dish
+						.dish__head.row
+							.dish__title Smoky Salmon Tartare
+							.dish__price $3.99
+						.dish__body The salmon is finely chopped and tossed in a fragrant dressing of lemon, shallots and capers. Serve with thin slices of melba toast.
+					.menu__list.dish
+						.dish__head.row
+							.dish__title Chicken Satay with Peanut Sauce
+							.dish__price $5.50 
+						.dish__body The creamy, slightly sweet sauce in Sally's easy chicken recipe perfectly complements the sticky, tangy meat.
+				.menu__item
+					.menu__title.h2 Main Dishes
+					.menu__list.dish
+						.dish__head.row
+							.dish__title Cataplana
+							.dish__price $5.99
+						.dish__body Cataplana refers to an extensive group of Portuguese dishes that can be prepared with various ingredients such as meat, seafood, rice, or pasta.
+					.menu__list.dish
+						.dish__head.row
+							.dish__title Ratatouille
+							.dish__price.--special $6.59
+						.dish__body This colorful Provençal vegetable ragout is traditionally made with simple, easily accessible ingredients: courgettes, eggplants, green and red peppers, tomatoes, onions, garlic, and parsley.
+					.menu__list.dish
+						.dish__head.row
+							.dish__title Paella
+							.dish__price $5.99
+						.dish__body Paella combines saffron-flavored rice with a wide array of additional ingredients, such as seafood, vegetables, or meat. Always served in the pan.
+					.menu__list.dish
+						.dish__head.row
+							.dish__title Pasta Carbonara
+							.dish__price $7.99
+						.dish__body The carbonara we know today is prepared by simply tossing spaghetti with guanciale (cured pork jowl), egg yolks, and Pecorino Romano cheese.
+				.menu__item
+					.menu__title.h2 Salads
+					.menu__list.dish
+						.dish__head.row
+							.dish__title Panzanella 
+							.dish__price $5.99
+						.dish__body Italian salad made from pieces of stale, moistened bread, with the addition of tomatoes, onions, or basil, and a dressing of vinegar and olive oil.
+					.menu__list.dish
+						.dish__head.row
+							.dish__title Caprese
+							.dish__price.--special $5.50
+						.dish__body The perfect combination of ripe, sun-kissed tomatoes, creamy mozzarella and fresh basil - this simple salad is believed to have originated on the island of Capri.
+					.menu__list.dish
+						.dish__head.row
+							.dish__title Greek salad
+							.dish__price $5.25
+						.dish__body Consisting of quartered tomatoes, sliced red onions, and chunky slices of cucumber. Greek salad is full of refreshing, raw vegetables and herbs. 
+	.reviews.bg-img(style="background-image: url(upload/bg/bg-reviews.jpg)")#reviews
+		.case
+			.reviews__wrap
+				.reviews__title.h2 Guest Reviews
+				.reviews__quote An outstanding place for a visit on an occasion or just – if, of course, you can get a free table without prior reservation. Modern, author's, bold, bright, provocative cuisine. Comfortable, designer interior. A high level of service, the waiters are polite and attentive. Will I come back again? Absolutely.
+				.reviews__author - food inc, New York
+	.book#book
+		.case.row
+			.book__img.row
+				img(src="../upload/form-1.png", alt="")
+				img(src="../upload/form-2.png", alt="")
+			.book__info
+				.book__title.h2 Make a Reservation!
+				.book__desc
+					p If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food.
+					p Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.
+				.book__form.row
+					.book__input.input.--border
+						label.input__title(for="book-name") Name
+						input.input__field(type="text" placeholder="name *" id="book-name")
+					.book__input.input.--border.--phone
+						label.input__title(for="book-phone") Phone
+						input.input__field(type="tel" placeholder="phone *" id="book-phone")
+					.book__input.input.--border.--date
+						label.input__title(for="book-date") Date
+						input.input__field(type="tel" placeholder="date *" id="book-date")
+					.book__input.input.--border.--time
+						label.input__title(for="book-time") Time
+						input.input__field(type="tel" placeholder="time" id="book-time")
+					button.book__btn.btn.--yellow Book now!

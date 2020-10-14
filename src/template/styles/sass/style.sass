@@ -1,0 +1,409 @@
+@import _fonts
+@import _vars
+@import _reset
+@import _grid
+
+.bg-img
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+
+.h2
+	font-family: Yeseva
+	font-size: 36px
+
+.desc
+	line-height: 24px
+
+
+@import input
+
+		
+
+.btn
+	width: 228px
+	height: 57px
+	color: #ffffff
+	text-transform: uppercase
+	font-size: 18px
+	transition: .3s
+	overflow: hidden
+	cursor: pointer
+	display: flex
+	justify-content: center
+	align-items: center
+	&.--black	
+		background-color: rgba(0,0,0,0.5)
+		border: 1px solid #000
+		margin-right: 30px
+		&:hover
+			background-color: #000
+			border: 1px solid #fff 
+	&.--white
+		border: 1px solid #fff
+		background-color: rgba(255,255,255,0.3)
+		&:hover
+			background-color: #fff
+			border: 1px solid #000
+			color: #dab33e
+	&.--yellow
+		color: #fff
+		border: 1px solid #c89f2d
+		background: #c89f2d
+		&:hover
+			color: #c89f2d
+			background-color: #fff
+		
+.header
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	background-position: center top -3px
+	background-repeat: repeat-x
+	min-height: 160px
+	&__case
+		max-width: 1210px
+	&__wrap
+		align-items: center
+		justify-content: space-between
+		margin-left: auto
+		width: 100%
+		padding-top: 10px
+		&__wrap
+			margin-left: auto
+			align-items: center
+		&__ham
+			display: none
+		&__nav
+			li
+				padding-right: 30px 
+				&:last-of-type
+					padding-right: 0
+	&__logo
+		img
+			width: 150px
+	&__nav
+		li
+			padding-right: 50px
+			font-family: Yeseva
+			font-size: 21px
+			&:last-of-type
+				padding-right: 0
+				margin-right: 30px
+			a
+				color: #ffffff 
+				border-top: 3px solid transparent
+				position: relative
+				&:before
+					content: ""
+					top: -30px
+					left: 50%
+					width: 0
+					height: 3px
+					background-color: #fff
+					opacity: 0
+					display: block
+					position: absolute
+					transition: .3s
+				&:hover::before
+					opacity: 1
+					left: 0
+					width: 100%
+.socials
+	&__item
+		margin-right: 15px
+		img
+			height: 20px
+			width: 20px
+	&__item:last-of-type
+		margin-right: 0
+	&__item:hover
+		transform: scale(0.95)
+.intro
+	padding-top: 240px
+	padding-bottom: 140px
+	&__title
+		color: #ffffff
+		font-family: Yeseva
+		font-size: 90px
+		text-align: center
+		text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.64)
+		width: 960px
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: 120px
+		position: relative
+	&__title::after
+		content: ""
+		background-image: url(../../imgs/divider-intro.png)
+		top: 240px
+		left: 38%
+		width: 232px
+		height: 43px
+		position: absolute
+		display: block
+	&__buttons
+		justify-content: center
+		align-content: center
+.about
+	padding-top: 100px
+	padding-bottom: 30px
+	&__info
+		width: 409px
+		text-align: center
+.info
+	margin-left: auto
+	margin-right: auto
+	&__title
+		color:#cc9900
+		position: relative
+		padding-bottom: 60px
+		&::after
+			content: ""
+			background-image: url(../../imgs/divider-yellow.png)
+			bottom: 20px
+			left: 19%
+			width: 247px
+			height: 24px
+			display: block
+			position: absolute
+	&__desc
+		margin-bottom: 50px
+	&__chef
+		img
+			margin: auto
+.ingredients
+	padding-top: 100px
+	padding-bottom: 100px
+	color: #fff
+	text-align: center
+	&__wrap
+		background-color:  rgba(0,0,0,0.6)
+		padding: 70px
+		width: 570px
+		margin-left: auto
+	&__title
+		position: relative
+		padding-bottom: 60px
+		&::after
+			content: ""
+			background-image: url(../../imgs/divider-white.png)
+			bottom: 15px
+			left: 19%
+			width: 247px
+			height: 24px
+			display: block
+			position: absolute
+	&__desc
+		width: 410px
+		margin-top: 20px
+		margin-bottom: 70px
+	&__item
+		margin-right: 30px
+		&:last-of-type
+			margin-right: 0 
+.menu
+	padding-top: 100px
+	padding-bottom: 100px
+	&__wrap
+		max-width: 1030px
+		justify-content: center
+		margin-left: auto
+		margin-right: auto
+	&__item
+		width: 515px
+		margin-bottom: 70px
+		padding-right: 40px
+		padding-left: 40px
+	&__item:nth-of-type(2n)
+		margin-right: 0
+	&__item:nth-of-type(3n)
+		margin-bottom: 0
+	&__item:nth-of-type(4n)
+		margin-bottom: 0
+		margin-right: 0
+	&__title
+		color: #cc9900
+		position: relative
+		padding-bottom: 75px
+		text-align: center
+		&::after
+			content: ""
+			background-image: url(../../imgs/divider-yellow.png)
+			bottom: 30px
+			left: 22%
+			width: 247px
+			height: 24px
+			display: block
+			position: absolute
+	&__list
+		margin-bottom: 35px
+		align-items: flex-start
+		&:last-of-type
+			margin-bottom: 0 
+.dish
+	&__head
+		color: #c89f2d
+		font-family: Yeseva 
+		font-size: 21px
+		justify-content: space-between
+		padding-bottom: 15px 
+	&__body
+		color: #4c4c4c
+	&__price
+		&.--special
+			position: relative
+			&::before
+				content: "Special"
+				position: absolute
+				top: -28px
+				left: 0
+				width: 69px
+				height: 22px
+				background-color: rgba(200,159,45,0.7)
+				color: #f8fafa
+				font-size: 14px
+				font-family: Lato
+				line-height: 20px
+				text-align: center
+.reviews
+	padding-top: 100px
+	padding-bottom: 100px
+	color: #fff
+	&__wrap
+		background-color: rgba(0, 0, 0, 0.7)
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+		width: 770px
+		padding: 80px 70px 100px 70px
+	&__title
+		position: relative
+		padding-bottom: 65px
+		&::after
+			content: ""
+			background-image: url(../../imgs/divider-white.png)
+			bottom: 20px
+			left: 30%
+			width: 247px
+			height: 24px
+			display: block
+			position: absolute
+	&__quote
+		width: 622px
+		font-size: 20px
+		font-family: Yeseva
+		color: #f2f4f4
+		line-height: 40px
+		position: relative
+		padding-bottom: 40px
+		&::before
+			content: ""
+			background-image: url(../../imgs/quote.png)
+			top: -15px
+			left: -35px
+			width: 32px
+			height: 25px
+			display: block
+			position: absolute
+	&__author
+		font-size: 18px
+.book
+	padding-top: 100px
+	padding-bottom: 100px
+	.case
+		justify-content: space-around
+	&__img
+		img
+			margin-right: 30px
+			&:last-of-type
+				margin-right: 0
+	&__info
+		width: 425px
+	&__title
+		color: #cc9900
+		position: relative
+		padding-bottom: 65px
+		text-align: center
+		&::after
+			content: ""
+			background-image: url(../../imgs/divider-yellow.png)
+			bottom: 20px
+			left: 20%
+			width: 247px
+			height: 24px
+			display: block
+			position: absolute
+	&__desc
+		text-align: center
+		line-height: 24px
+		p
+			margin-bottom: 15px
+
+	&__form
+		max-width: 420px
+		margin-left: auto
+		margin-right: auto
+
+	&__input
+		width: calc(100% / 2 - 15px)
+		margin-bottom: 27px
+		&:nth-of-type(even)
+			margin-left: auto
+
+	&__btn
+		margin-top: 3px
+		margin-left: auto
+		margin-right: auto
+	
+
+.footer 
+	background-color: #191919
+	padding-top: 50px
+	padding-bottom: 50px
+	color: #fff
+	text-align: center
+	&__title
+		position: relative
+		font-size: 21px
+		font-family: Yeseva
+		padding-bottom: 55px
+		&:after
+			content: ""
+			bottom: 20px
+			left: 50%
+			width: 199px
+			height: 19px
+			background-image: url(../../imgs/divider-footer.png)
+			display: block  
+			position: absolute
+			transform: translateX(-50%)
+	&__desc
+		width: 343px
+		line-height: 24px
+	&__hours
+		width: 195px
+		strong
+			font-weight: 700
+	&__payment
+		justify-content: center
+		img
+			height: 15px
+			width: 23px
+			border: 1px solid #fff
+			border-radius: 3px
+			margin-right: 10px
+			margin-top: 60px
+			&:last-of-type
+				margin-right: 0
+	&__address
+		width: 200px
+		font-weight: 700
+		line-height: 24px	
+	&__socials
+		justify-content: center
+		img
+			margin-top: 46px
+.footer .case
+	justify-content: space-around
